@@ -1,0 +1,137 @@
+.category-list {
+    .accordion {
+        border-radius: 0.375rem;
+        background-color: rgba(255, 255, 255, 1);
+
+        .accordion-button {
+            background-color: rgba(240, 240, 240, 1);
+            border-bottom: 1px solid #ededed;
+            margin-top: 8px;
+            font-weight: 600;
+            height: 45px;
+            color: rgba(38, 38, 38, 1);
+
+            &:not(.collapsed) {
+                color: rgba(38, 38, 38, 1);
+               
+            }
+
+            &::after {
+                background-image: url('../../assets/icons/UpChevron.svg') !important;
+                transform: rotate(180deg);
+            }
+            &:not(.collapsed)::after {
+                transform: rotate(0deg);
+            }
+        }
+
+    }
+
+    .accordion-body {
+        .accordion {
+            .accordion-item {
+                border-radius: 0px !important;
+            }
+
+            .accordion-button {
+                padding-left: 1.7rem;
+                margin-top: 0px;
+                border-bottom: 1px solid #e6e6e6;
+                border-radius: 0px;
+                color: rgba(38, 38, 38, 1);
+
+                &::after {
+                    transform: rotate(90deg);
+                    background-image: url('../../assets/icons/UpChevron.svg') !important;
+                }
+
+                &:not(.collapsed)::after {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+
+        .list-group {
+            .border-bottom {
+                border-bottom: var(--bs-border-width) var(--bs-border-style) #f0f0f0 !important;
+            }
+
+            .list-group-item {
+                padding-right: 1.7rem;
+                padding-left: 1.7rem;
+
+                .team-name {
+                    font-weight: 600;
+                    margin-bottom: 4px;
+                    font-size: 16px;
+                }
+
+                .points {
+                    font-size: 18px;
+                    font-size: 16px;
+                }
+
+                img.icon {
+                    height: 20px;
+                }
+
+                .in-play {
+                    width: 48px;
+                    height: 18px;
+                    background: red;
+                    text-align: center;
+                    border-radius: 4px;
+                    color: white;
+                    margin-right: 10px;
+                    font-size: 11px;
+                }
+
+                .date-border-right {
+                    height: 20px;
+                    background-color: #938f8f;
+                    width: 1px;
+                }
+            }
+        }
+    }
+
+}
+@media  (min-width: 767px) and (max-width: 950px) {
+    .category-list {
+        .accordion {
+            .accordion-button {
+                font-size: 14px;
+            }
+            .accordion-body{
+                .list-group{
+                    .list-group-item{
+                        .team-name{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+       
+    }
+}
+@media only screen and (max-width: 600px) {
+    .category-list {
+        .accordion {
+           
+            .accordion-button {
+                font-size: 14px;
+            }
+            .accordion-body{
+                .list-group{
+                    .list-group-item{
+                        .team-name{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+       
+    }
+}

@@ -1,0 +1,81 @@
+.teams{
+    background-color:   rgba(68, 1, 130, 1);
+    border-radius: 5px;
+    padding: 40px 00px  0px 0px;
+    .teams-title{
+        color: #fcc425;
+        font-size: 33px;
+        font-weight: 900;
+        line-height: 1.4;
+        padding: 0 10px 15px 10px;
+        span{
+            display: block;
+            color: #fff;
+            font-weight: 500;
+            font-size: 25px;
+            
+         }
+     }
+     .teams-tagline{
+        color: #fff;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        padding: 0 30px;
+        display: flex;
+        justify-content: center;
+       }
+       .captains{
+        padding: 12px 0 0 0;
+        position: relative;
+         border-radius: 5px;
+         img{
+            width: 100%;
+              border-radius: 10px;
+              object-fit: contain;
+           }
+           .start-button{
+            position: absolute;
+            background-color: #ffc11c;
+            color: #000000;
+            font-size: 20px;
+            width: 160px;
+            text-align: center;
+            font-weight: 700;
+            border-radius: 5px;
+            height: 47px;
+            top: 52%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.4s;
+            border: 0px;
+            &:hover{
+                background-color: #000000;
+                color: #fff;
+             }
+         }
+     }
+  }
+  
+@media only screen and (max-width: 450px) {
+    .teams{
+        .teams-title{
+            font-size: 25px;
+            span{
+            font-size: 20px;
+            }
+        }
+        .teams-tagline{
+            font-size: 16px;
+        }
+        .captains{
+            .start-button{
+                font-size: 17px;
+                width: 145px;
+                height: 42px;
+            }
+        }
+       
+    }
+}
+ 

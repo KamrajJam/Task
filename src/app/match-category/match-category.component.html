@@ -1,0 +1,15 @@
+<div class="matches-category mt-4">
+    <div class="d-flex flex-wrap">
+        <button class="btn shadow-lg match cursor-pointer d-flex justify-content-center align-items-center"
+         *ngFor="let item of matchesList;let index=index"  [ngClass]="activeIndex==index  ? 'active-btn': ''"
+          (click)="emitCategoryValue(item.category,index)">
+         <div class="counts d-flex justify-content-center align-items-center">
+                <div class="gray d-flex justify-content-center align-items-center">0</div>
+                <div class="yellow d-flex justify-content-center align-items-center">22</div>
+         </div>
+         <div class="popover-arrow" *ngIf="activeIndex==index"></div>
+         <img [src]="item.icon" alt="icon" class="svg-icon mx-1">
+            {{item.name}}
+        </button>
+    </div>
+</div>

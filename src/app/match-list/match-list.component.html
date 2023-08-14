@@ -1,0 +1,71 @@
+<div class="match-list shadow-sm">
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let item of matches">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="match-date-time ">
+                        <ng-container *ngIf="!item.upcoming;else elsePart">
+                            <div class="bg-danger square-box"></div>
+                        </ng-container>
+                        <ng-template #elsePart>
+                            <div class="date square-box d-flex justify-content-center align-items-center">
+                                {{item.date}}
+                            </div>
+                            <div class="time d-flex justify-content-center align-items-center">
+                                {{item.time}}
+                            </div>
+                        </ng-template>
+                    </div>
+                    <div class="match-teams mx-3">
+                        <div class="team-name">
+                            {{item.teamA}}
+                            <img src="../../assets/icons/vs.svg" alt="icon">
+                            {{item.teamB}}
+                        </div>
+                        <div class="tournament-type">
+                            {{item.tournament_type}}
+                        </div>
+                    </div>
+                    <div class="sm-add-favourite d-none d-flex justify-content-center ms-2  align-items-center">
+                        <img src="../../assets/icons/add-to-favourites-svgrepo-com 2.svg" alt="icon">
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-around">
+                    <div class="bfm-points d-flex align-items-start">
+                        <ng-container *ngIf="item.b_f_m">
+                            <div class="b-point d-flex justify-content-center align-items-center">
+                                {{item.b_point}}
+                                <div class="box d-flex justify-content-center align-items-center">
+                                    B
+                                </div>
+                            </div>
+                            <div class="f-point d-flex justify-content-center align-items-center">
+                                {{item.f_point}}
+                                <div class="box d-flex justify-content-center align-items-center">
+                                    F
+                                </div>
+                            </div>
+                            <div class="m-point d-flex justify-content-center align-items-center">
+                                {{item.m_point}}
+                                <div class="box d-flex justify-content-center align-items-center">
+                                    M
+                                </div>
+                            </div>
+                        </ng-container>
+                    </div>
+                    <div class="items-points d-flex align-items-center " *ngFor="let point of item.items">
+                        <div class="item-a d-flex justify-content-center align-items-center">
+                            {{point.pointA}}
+                        </div>
+                        <div class="item-b d-flex justify-content-center align-items-center">
+                            {{point.pointB}}
+                        </div>
+                    </div>
+                    <div class="add-favourite d-flex justify-content-center ms-2  align-items-center">
+                        <img src="../../assets/icons/add-to-favourites-svgrepo-com 2.svg" alt="icon">
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

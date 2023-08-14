@@ -1,0 +1,78 @@
+
+
+.active-btn {
+    transition: 0s;
+    font-weight: 600 !important;
+    color: white;
+    background-color: rgb(34, 34, 34) !important;
+    position: relative;
+    height: 60px;
+    
+}
+.popover-arrow {
+    clip-path: polygon(10% 79%, 100% 78%, 100% 80%, 74% 80%, 58% 100%, 39% 81%, 0 81%);
+    position: absolute;
+    top: 11px;
+    height: 44px;
+    background-color: #222222;
+    width: 71px;
+
+}
+.btn:active{
+    color: white;
+    border-color: transparent !important;
+}
+.match {
+    position: relative;
+    height: 49px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    font-weight: 400;
+    margin-right: 10px;
+    margin-bottom: 18px;
+    padding: 0px 10px 0px 0px;
+    .counts{
+        position: absolute;
+        top: -7px;
+        border-radius: 5px;
+        height: 13px;
+        width: 40px;
+        right: 6px;
+        font-size: 12px;
+        .gray{
+            height: 16px;
+            width: 20px;
+            background-color: rgb(89, 89, 89);
+            color: white;
+            border-radius: 4px 0 0 4px;
+        }
+        .yellow{
+            height: 16px;
+            width: 20px;
+            background-color: rgb(255, 211, 33);
+            color: black;
+            border-radius: 0px 4px 4px 0px;
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .match{
+        font-size: 14px;
+        padding: 0px 8px 0px 0px;
+        height: 40px;
+        .popover-arrow{
+            height: 35px;
+        }
+        .svg-icon{
+            height: 33px;
+        }
+       } 
+    
+}
+
+
+

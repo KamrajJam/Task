@@ -1,0 +1,17 @@
+<div class="container-fluid px-4">
+    <div class="row">
+      <div class="col-md-3 ">
+        <app-search-bar (searchText)="handleInputValue($event)"></app-search-bar>
+        <app-category-list></app-category-list>
+        <app-sidebar-banner></app-sidebar-banner>
+      </div>
+      <div class="col-md-9">
+        <!-- Click Inplay buttton to close popup  -->
+        <app-inplay-popup></app-inplay-popup>
+        <app-main-slider></app-main-slider>
+        <app-accordion></app-accordion>
+        <app-match-category (categoryValue)="filterMaches($event)"></app-match-category>
+        <app-match-list [matches]="filteredMatches"></app-match-list>
+      </div>
+    </div>
+  </div>

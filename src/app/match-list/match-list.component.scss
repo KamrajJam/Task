@@ -1,0 +1,360 @@
+.match-list {
+    border-radius: 5px;
+    .red-bg {
+        background: rgba(255, 0, 0, 1);
+    }
+
+    .square-box {
+        height: 26px;
+        width: 65px;
+        border-radius: 5px;
+
+    }
+
+    .date {
+        font-size: 11px;
+        background-color: rgb(125, 125, 125);
+        color: white;
+        font-size: 10px;
+    }
+
+    .time {
+        font-size: 10px;
+    }
+
+    .team-name {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .tournament-type {
+        color: red;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .bfm-points {
+        width: 70px;
+    }
+
+    .b-point,
+    .f-point,
+    .m-point {
+        position: relative;
+        height: 23px;
+        width: 19px;
+        background: rgba(38, 38, 38, 1);
+        color: white;
+        border-radius: 4px;
+        margin-right: 3px;
+        font-size: 10px;
+
+        .box {
+            position: absolute;
+            top: 19px;
+            height: 16px;
+            width: 15px;
+            border-radius: 3px;
+            background-color: rgba(219, 219, 219, 1);
+            font-size: 10px;
+            color: black;
+        }
+    }
+
+    .items-points {
+        width: 108px;
+        height: 51px;
+        background: gray;
+        background-color: rgba(240, 240, 240, 1);
+        padding: 2px;
+        border-radius: 5px;
+
+        .item-a,
+        .item-b {
+            height: 42px;
+            width: 48px;
+            border-radius: 5px;
+            font-weight: 600;
+            margin: 2px;
+        }
+
+        .item-a {
+            background-color: rgba(168, 204, 221, 1);
+        }
+
+        .item-b {
+            background-color: rgba(245, 216, 228, 1);
+        }
+    }
+}
+
+
+@media only screen and (min-width:1500px) {
+    .match-list {
+        .list-group {
+            .list-group-item {
+                .bfm-points {
+
+                    .b-point,
+                    .f-point,
+                    .m-point {
+                        height: 30px;
+                        width: 25px;
+                        font-size: 14px;
+
+                        .box {
+                            height: 21px;
+                            font-size: 14px;
+                            width: 18px;
+                            top: 23px;
+                        }
+                    }
+                }
+
+                .add-favourite {
+                    img {
+                        height: 30px;
+                    }
+                }
+
+                .square-box {
+                    height: 26px;
+                    width: 73px;
+                }
+
+                .team-name {
+                    font-size: 20px;
+                }
+
+                .tournament-type {
+                    font-size: 16px;
+                }
+
+                .items-points {
+                    width: 140px;
+                    height: 60px;
+                    margin-bottom: 5px;
+
+                    .item-a,
+                    .item-b {
+                        height: 50px;
+                        width: 65px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1300px) {
+    .match-list {
+        .list-group {
+            .list-group-item {
+                .bfm-points {
+                    width: 70px;
+                }
+
+                .items-points {
+                    width: 94px;
+                    height: 46px;
+
+                    .item-a,
+                    .item-b {
+                        height: 36px;
+                        width: 43px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width:1180px) {
+    .match-list {
+        .list-group {
+            .list-group-item {
+                .team-name {
+                    font-size: 14px;
+                }
+
+                .bfm-points {
+                    width: 65px;
+                }
+
+                .items-points {
+                    width: 85px;
+                    height: 39px;
+
+                    .item-a,
+                    .item-b {
+                        height: 33px;
+                        width: 36px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .match-list {
+        .list-group {
+            .list-group-item {
+                .team-name {
+                    font-size: 14px;
+                }
+
+                .bfm-points {
+                    width: 60px;
+                }
+
+                .items-points {
+                    width: 77px;
+                    height: 37px;
+
+                    .item-a,
+                    .item-b {
+                        height: 31px;
+                        width: 34px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1020px) {
+    .match-list {
+        .list-group {
+            .list-group-item {
+                .col-md-6 {
+                    width: 100%;
+                    justify-content: center;
+
+                    .match-teams {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        width: 100%;
+                        margin-bottom: 10px;
+                    
+                    }
+
+                    .add-favourite {
+                        display: none !important;
+                    }
+
+                    .sm-add-favourite {
+                        display: block !important;
+                        margin-top: -21px;
+                    }
+                }
+
+                .team-name {
+                    font-size: 16px;
+                }
+
+                .bfm-points {
+                    width: 70px;
+
+                }
+
+                .items-points {
+                    width: 110px;
+                    height: 45px;
+                    margin-bottom: 5px;
+
+                    .item-a,
+                    .item-b {
+                        height: 40px;
+                        width: 50px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+@media only screen and (max-width:650px) {
+    .match-list {
+        .list-group {
+            .list-group-item {
+                .square-box {
+                    height: 19px;
+                    width: 55px;
+                }
+
+                .bg-danger {
+                    height: 19px;
+                    width: 39px;
+                    margin-top: -9px;
+                }
+
+                .team-name {
+                    font-size: 14px;
+                }
+
+                .items-points {
+                    width: 109px;
+                    height: 37px;
+                    margin-bottom: 5px;
+
+                    .item-a,
+                    .item-b {
+                        height: 29px;
+                        width: 49px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:450px) {
+    .match-list {
+        .list-group {
+            .list-group-item {
+                .square-box {
+                    height: 19px;
+                    width: 55px;
+                    margin-top: -9px;
+                }
+
+                .bg-danger {
+                    height: 19px;
+                    width: 39px;
+                    margin-top: -21px;
+                }
+
+                .team-name {
+                    font-size: 14px;
+                }
+
+                .items-points {
+                    width: 77px;
+                    height: 36px;
+                    margin-bottom: 5px;
+
+                    .item-a,
+                    .item-b {
+                        height: 29px;
+                        width: 34px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

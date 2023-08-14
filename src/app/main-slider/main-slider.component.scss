@@ -1,0 +1,111 @@
+.main-slider {
+    .carousel-item {
+        .slide-image {
+            height: 250px;
+            border-radius: 5px;
+        }
+
+        .carousel-caption {
+            right: 0;
+            bottom: 1.25rem;
+            left: 6%;
+            top: 5%;
+            text-align: start;
+
+            h5 {
+                font-size: 25px;
+            }
+
+            h2 {
+                color: rgb(246, 195, 60);
+                font-size: 50px;
+                font-weight: 700;
+            }
+
+            .svg-arrow {
+                height: 12px;
+            }
+
+            .text-yellow {
+                color: rgb(246, 195, 60);
+                font-weight: 600;
+            }
+
+            .start-button {
+                border: 0px;
+                text-decoration: none;
+                background-color: #ffc11c;
+                color: #000000;
+                font-size: 20px;
+                width: 160px;
+                text-align: center;
+                font-weight: 700;
+                border-radius: 5px;
+                height: 47px;
+                transition: 0.4s;
+            }
+
+            .start-button:hover {
+                background-color: #000000;
+                color: #fff;
+            }
+
+        }
+    }
+
+    .carousel-indicators {
+        bottom: -35px;
+
+        .active {
+            opacity: 1;
+            background-color: rgba(255, 193, 28, 1) !important
+        }
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 45px;
+        height: 6px;
+        border-radius: 12px;
+        border: 0;
+        border-top: 0;
+        border-bottom: 0;
+        opacity: 1;
+        background-color: rgba(115, 86, 11, 1);
+    }
+
+}
+@media only screen and (max-width: 992px) {
+    .main-slider {
+        .carousel-item {
+            .slide-image {
+                height: 220px;
+            }
+            .carousel-caption {
+                left: 6%;
+                top: 8%;
+
+                h5 {
+                    font-size: 20px;
+                }
+
+                h2 {
+                    color: rgb(246, 195, 60);
+                    font-size: 30px;
+                    font-weight: 700;
+                }
+
+                .text {
+                    margin-top: 10px;
+                    font-size: 13px;
+                }
+
+                .start-button {
+                    font-size: 16px;
+                    width: 142px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+

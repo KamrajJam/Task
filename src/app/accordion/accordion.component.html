@@ -1,0 +1,42 @@
+<div class="games-list shadow-sm">
+    <div class="accordion shadow-sm" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item border-0" *ngFor="let item of item_list;let index = index">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button collapsed shadow-none " type="button" data-bs-toggle="collapse"
+                    [attr.data-bs-target]="'#games'+index" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    <img class="mx-2" [src]="item.icon" alt="icon"> {{item.name}}
+                </button>
+            </h2>
+            <div [id]="'games'+index" class="accordion-collapse collapse" [ngClass]="index === 0 ? 'show': ''"
+                aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body px-4">
+                    <div class="d-flex">
+                        <button class="btn country-name cursor-pointer d-flex justify-content-center align-items-center"
+                            *ngFor="let country of item.countries;let index=index"
+                            [ngClass]="activeIndex==index  ? 'active-btn': ''" (click)="activeIndex=index">
+                            <div class="popover-arrow" *ngIf="activeIndex==index"></div>
+                            <img [src]="country.icon" alt="icon" class="mx-1">
+                            {{country.name}}
+                        </button>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item" *ngFor="let childItem of item.countries[activeIndex].items">
+                            <div class="d-flex ">
+                                <div class="item-names d-flex justify-content-start align-items-center">
+                                    {{childItem.name}}
+                                </div>
+                                <div class="justify-content-start flex-wrap timing d-flex align-items-center">
+                                    <div class="timing-item d-flex justify-content-center align-items-center m-2"
+                                        *ngFor="let time of childItem.timings">
+                                        {{time}}
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
