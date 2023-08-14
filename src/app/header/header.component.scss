@@ -111,14 +111,17 @@
 @media only screen and (max-width: 450px){
     .cred-buttons{
       .btn-login{
-        width: 57px;
-        font-size: 12px;
+        width: 50px;
+        font-size: 11px;
       }
       .btn-register{
-        width: 104px;
-    font-size: 12px;
+        width: 99px;
+        font-size: 11px;
       }
     }  
+    .navbar-toggler{
+        padding: 2px 9px;
+    }
   }
 
 
