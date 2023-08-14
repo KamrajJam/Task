@@ -123,6 +123,28 @@
         padding: 2px 9px;
     }
   }
+  @media only screen and (max-width: 360px){
+    .navbar{
+        .navbar-brand{
+            img{
+                height: 34px;
+            }
+        }
+    }
+    .cred-buttons{
+      .btn-login{
+        width: 46px;
+        font-size: 10px;
+      }
+      .btn-register{
+        width: 92px;
+        font-size: 10px;
+      }
+    }  
+    .navbar-toggler{
+        padding: 0px 6px;
+    }
+  }
 
 
 
